@@ -109,7 +109,7 @@ const Portfolio = () => {
         {/* Profile Section with Fade In */}
         <div className="mb-12 sm:mb-16 animate-fadeIn">
           {/* Profile Image Frame with Hover Effect */}
-          <div className="mb-6 sm:mb-8 flex justify-center">
+          <div className="flex flex-col items-center gap-6 sm:gap-8">
             <div className="relative group">
               <div className="w-24 h-24 sm:w-32 sm:h-32 bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex items-center justify-center transition-all duration-300 group-hover:scale-105 group-hover:border-blue-500">
                 <img 
@@ -119,47 +119,47 @@ const Portfolio = () => {
                 />
               </div>
             </div>
-          </div>
 
-          <div className="text-center">
-            <h1 className="text-3xl sm:text-4xl font-bold mb-2 animate-slideDown">Rohan Vohra</h1>
-            <p className="text-lg sm:text-xl text-gray-400 mb-2 animate-slideDown animation-delay-100">Full Stack Developer</p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-gray-400 mb-6 animate-slideDown animation-delay-200">
-              <div className="flex items-center gap-1 hover:text-white transition-colors duration-300">
-                <MapPin className="w-4 h-4 animate-pulse" />
-                <span>Delhi, India</span>
+            <div className="text-center">
+              <h1 className="text-3xl sm:text-4xl font-bold mb-2 animate-slideDown">Hi, I&apos;m Rohan Vohra</h1>
+              <p className="text-lg sm:text-xl text-gray-400 mb-2 animate-slideDown animation-delay-100">Full Stack Developer</p>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-gray-400 mb-6 animate-slideDown animation-delay-200">
+                <div className="flex items-center gap-1 hover:text-white transition-colors duration-300">
+                  <MapPin className="w-4 h-4 animate-pulse" />
+                  <span>Delhi, India</span>
+                </div>
+                <div className="flex items-center gap-1 hover:text-white transition-colors duration-300">
+                  <Calendar className="w-4 h-4 animate-pulse" />
+                  <span>Available for work</span>
+                </div>
               </div>
-              <div className="flex items-center gap-1 hover:text-white transition-colors duration-300">
-                <Calendar className="w-4 h-4 animate-pulse" />
-                <span>Available for work</span>
-              </div>
+              <p className="text-gray-300 max-w-2xl mx-auto leading-relaxed text-sm sm:text-base animate-fadeIn animation-delay-300">
+                Passionate full stack developer building scalable web applications. 
+                I specialize in React, Node.js, and cloud technologies. I love creating efficient, user-friendly 
+                solutions that make a real impact.
+              </p>
             </div>
-            <p className="text-gray-300 max-w-2xl mx-auto mb-8 leading-relaxed text-sm sm:text-base animate-fadeIn animation-delay-300">
-              Passionate full stack developer building scalable web applications. 
-              I specialize in React, Node.js, and cloud technologies. I love creating efficient, user-friendly 
-              solutions that make a real impact.
-            </p>
+          </div>
             
-            {/* Social Links with Hover Effects */}
-            <div className="flex flex-wrap justify-center gap-3 sm:gap-4 animate-fadeIn animation-delay-400">
-              {[
-                { name: 'GitHub', icon: Github, url: 'https://github.com/Rohan5050' },
-                { name: 'LinkedIn', icon: Linkedin, url: 'https://www.linkedin.com/in/rohanvohra055/' },
-                { name: 'Twitter', icon: Twitter, url: 'https://x.com/Ron05050' },
-                { name: 'Email', icon: Mail, url: 'mailto: rohanvohra055@gmail.com' },
-                { name: 'Resume', icon: FileText, /*url: '#'*/ }
-              ].map((link, index) => (
-                <a
-                  key={index}
-                  href={link.url}
-                  className="p-2 sm:p-3 bg-gray-800 rounded-lg hover:bg-blue-600 transition-all duration-300 border border-gray-700 hover:border-blue-500 hover:scale-110 hover:rotate-3 transform"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <link.icon className="w-4 h-4 sm:w-5 sm:h-5 transition-transform duration-300 group-hover:scale-110" />
-                </a>
-              ))}
-            </div>
+          {/* Social Links with Hover Effects */}
+          <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mt-6 animate-fadeIn animation-delay-400">
+            {[
+              { name: 'GitHub', icon: Github, url: 'https://github.com/Rohan5050' },
+              { name: 'LinkedIn', icon: Linkedin, url: 'https://www.linkedin.com/in/rohanvohra055/' },
+              { name: 'Twitter', icon: Twitter, url: 'https://x.com/Ron05050' },
+              { name: 'Email', icon: Mail, url: 'mailto: rohanvohra055@gmail.com' },
+              { name: 'Resume', icon: FileText, url: 'https://drive.google.com/file/d/1bKgLOpn5n11JPFuUKhBRZKdJPK9CU-8V/view?usp=sharing' }
+            ].map((link, index) => (
+              <a
+                key={index}
+                href={link.url}
+                className="p-2 sm:p-3 bg-gray-800 rounded-lg hover:bg-blue-600 transition-all duration-300 border border-gray-700 hover:border-blue-500 hover:scale-110 hover:rotate-3 transform"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <link.icon className="w-4 h-4 sm:w-5 sm:h-5 transition-transform duration-300 group-hover:scale-110" />
+              </a>
+            ))}
           </div>
         </div>
 

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Github, Linkedin, Twitter, Mail, FileText, ExternalLink, MapPin, Calendar } from 'lucide-react';
-import profilePic from '../src/images/profile_pic.jpg';
+import profilePic from '../src/images/profile_pic_latest.jpg';
 import img100xPay from '../src/images/100xpay_img.webp';
 import imgDrawcelia from '../src/images/Drawcelia_img.png'
 import imgbrainly from '../src/images/brainly_img.png'
@@ -24,7 +24,7 @@ const Portfolio = () => {
     {
       title: "Personal Expense Tracker",
       description: "A full-stack expense tracker built with Typescript, React and Node.js. Features include user authentication, expense management, inventory management, and admin dashboard.",
-      tech: ["Typescript","React", "Node.js", "Postgresql", "Prisma", "Tailwind CSS"],
+      tech: ["Typescript", "React", "Node.js", "Postgresql", "Prisma", "Tailwind CSS"],
       liveLink: "https://personal-expense-tracker-xi.vercel.app/",
       githubLink: "https://github.com/Rohan5050/Personal-Expense-Tracker",
       image: img100xPay
@@ -49,17 +49,25 @@ const Portfolio = () => {
 
   const experiences = [
     {
-      title: "Full Stack Developer",
-      company: "Manifest IQ",
+      title: "Software Engineer",
+      company: "Three Tuskers",
       //period: "",
+      location: "Hybrid",
+      description: "Integrated CCTV with AI analytics (motion detection, object recognition, ANPR) for real-time surveillance automation.",
+      current: true
+    },
+    {
+      title: "Full Stack Developer",
+      company: "Aumnshi Global India Private Limited",
+      period: "June 2025 - July 2025",
       location: "Remote",
       description: "Built and maintained web applications using modern JavaScript frameworks. Collaborated with designers and product managers to deliver user-centric solutions.",
-      current: true
+      current: false
     },
     {
       title: "Java Full Stack Developer",
       company: "Q Spiders",
-      //period: "2020 - 2021",
+      period: "Feb 2025 - May 2025",
       location: "Delhi, India",
       description: "Developed responsive websites and web applications. Focused on performance optimization and cross-browser compatibility.",
       current: false
@@ -68,32 +76,25 @@ const Portfolio = () => {
 
   const blogs = [
     {
-      title: "Modern React Patterns: Building Maintainable Applications",
-      description: "Exploring advanced React patterns including compound components, render props, and custom hooks. Learn how to write cleaner, more maintainable code.",
-      date: "January 15, 2024",
-      readTime: "10 min read",
-      //link: "#"
+      title: "Setting Tls For Custom Domain",
+      description: "Before moving forward with the approach to set tls first of all it is important to understand what is tls ?",
+      date: "25 June, 2025",
+      readTime: "2 min read",
+      link: "https://medium.com/@rohanvohra055/setting-tls-for-custom-domain-63da10610f21"
     },
     {
-      title: "TypeScript Best Practices for Frontend Development",
-      description: "A comprehensive guide to using TypeScript effectively in frontend projects. Covers type safety, performance optimization, and common pitfalls to avoid.",
-      date: "December 20, 2023",
-      readTime: "8 min read",
-      //link: "#"
-    },
-    {
-      title: "The Evolution of CSS: From Flexbox to Grid and Beyond",
-      description: "Understanding modern CSS layout techniques and how they've revolutionized web design. Practical examples and browser support considerations included.",
-      date: "November 10, 2023",
-      readTime: "12 min read",
-      //link: "#"
+      title: "The Bright Side",
+      description: "In the midst of worries and struggles, we often look back on the mistakes we made in the past or present, but this won’t help us in the long run , It only increases pain and suffering.",
+      date: "31st August, 2025",
+      readTime: "2 min read",
+      link: "https://medium.com/@rohanvohra055/the-bright-side-889ab2fe67a1"
     }
   ];
 
   return (
     <div className="min-h-screen bg-gray-900 text-white relative overflow-hidden">
       {/* Grid Background with Animation */}
-      <div 
+      <div
         className="absolute inset-0 opacity-10 animate-grid"
         style={{
           backgroundImage: `
@@ -104,7 +105,7 @@ const Portfolio = () => {
           animation: 'gridMove 20s linear infinite'
         }}
       />
-      
+
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12 relative z-10">
         {/* Profile Section with Fade In */}
         <div className="mb-12 sm:mb-16 animate-fadeIn">
@@ -112,9 +113,9 @@ const Portfolio = () => {
           <div className="flex flex-col items-center gap-6 sm:gap-8">
             <div className="relative group">
               <div className="w-24 h-24 sm:w-32 sm:h-32 bg-gray-800 border border-gray-700 rounded-lg overflow-hidden flex items-center justify-center transition-all duration-300 group-hover:scale-105 group-hover:border-blue-500">
-                <img 
-                  src={profilePic} 
-                  alt="Profile" 
+                <img
+                  src={profilePic}
+                  alt="Profile"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
@@ -122,7 +123,7 @@ const Portfolio = () => {
 
             <div className="text-center">
               <h1 className="text-3xl sm:text-4xl font-bold mb-2 animate-slideDown">Hi, I&apos;m Rohan Vohra</h1>
-              <p className="text-lg sm:text-xl text-gray-400 mb-2 animate-slideDown animation-delay-100">Full Stack Developer</p>
+              <p className="text-lg sm:text-xl text-gray-400 mb-2 animate-slideDown animation-delay-100">Software Engineer</p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-gray-400 mb-6 animate-slideDown animation-delay-200">
                 <div className="flex items-center gap-1 hover:text-white transition-colors duration-300">
                   <MapPin className="w-4 h-4 animate-pulse" />
@@ -134,21 +135,19 @@ const Portfolio = () => {
                 </div>
               </div>
               <p className="text-gray-300 max-w-2xl mx-auto leading-relaxed text-sm sm:text-base animate-fadeIn animation-delay-300">
-                Passionate full stack developer building scalable web applications. 
-                I specialize in React, Node.js, and cloud technologies. I love creating efficient, user-friendly 
-                solutions that make a real impact.
+                Software Engineer skilled in Full-Stack Development and Computer Vision with expertise in Next.js, JavaScript and Node.js .With a commitment to continuous learning, the aim is to innovate and adapt in a rapidly evolving tech environment.
               </p>
             </div>
           </div>
-            
+
           {/* Social Links with Hover Effects */}
           <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mt-6 animate-fadeIn animation-delay-400">
             {[
               { name: 'GitHub', icon: Github, url: 'https://github.com/Rohan5050' },
               { name: 'LinkedIn', icon: Linkedin, url: 'https://www.linkedin.com/in/rohanvohra055/' },
-              { name: 'Twitter', icon: Twitter, url: 'https://x.com/Ron05050' },
+              { name: 'Twitter', icon: Twitter, url: 'https://x.com/rvohra18' },
               { name: 'Email', icon: Mail, url: 'mailto: rohanvohra055@gmail.com' },
-              { name: 'Resume', icon: FileText, url: 'https://drive.google.com/file/d/1bKgLOpn5n11JPFuUKhBRZKdJPK9CU-8V/view?usp=sharing' }
+              { name: 'Resume', icon: FileText, url: 'https://drive.google.com/file/d/1oVWfyRZMyYlbqfiFgC7BPlVU5SBdVjjd/view?usp=sharing' }
             ].map((link, index) => (
               <a
                 key={index}
@@ -167,13 +166,13 @@ const Portfolio = () => {
         <div className="relative">
           {/* Progress Line with Enhanced Effects - Hidden on Mobile */}
           <div className="hidden sm:block absolute left-8 top-0 w-0.5 z-0" style={{ height: 'calc(100% - 8rem)' }}>
-            <div 
+            <div
               className="absolute inset-0 bg-gray-700 rounded-full"
               style={{
                 background: 'linear-gradient(to bottom, #374151 0%, #374151 100%)'
               }}
             />
-            <div 
+            <div
               className="absolute w-6 h-6 rounded-full animate-pulse"
               style={{
                 background: 'radial-gradient(circle, #3b82f6 0%, rgba(59, 130, 246, 0.8) 40%, transparent 80%)',
@@ -184,7 +183,7 @@ const Portfolio = () => {
                 transition: 'transform 0.3s ease-out'
               }}
             />
-            <div 
+            <div
               className="absolute w-1 rounded-full transition-all duration-300"
               style={{
                 background: 'linear-gradient(to bottom, #3b82f6, rgba(59, 130, 246, 0.5), transparent)',
@@ -203,8 +202,8 @@ const Portfolio = () => {
             <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 animate-slideRight">Experience</h2>
             <div className="space-y-4 sm:space-y-6">
               {experiences.map((exp, index) => (
-                <div 
-                  key={index} 
+                <div
+                  key={index}
                   className="bg-gray-800 rounded-lg p-4 sm:p-6 border border-gray-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-500/20 animate-fadeIn"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
@@ -239,21 +238,21 @@ const Portfolio = () => {
             <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 animate-slideRight">Featured Projects</h2>
             <div className="grid grid-cols-1 gap-6 sm:gap-8">
               {projects.map((project, index) => (
-                <div 
-                  key={index} 
+                <div
+                  key={index}
                   className="bg-gray-900/50 backdrop-blur-sm rounded-2xl border border-gray-800/50 hover:border-blue-500/50 transition-all duration-300 hover:transform hover:-translate-y-1 animate-fadeIn"
                   style={{ animationDelay: `${index * 150}ms` }}
                 >
                   {/* Project Image */}
                   <div className="relative h-48 overflow-hidden rounded-t-2xl">
-                    <img 
-                      src={project.image} 
+                    <img
+                      src={project.image}
                       alt={project.title}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent transition-opacity duration-300 group-hover:opacity-0" />
                   </div>
-                  
+
                   {/* Project Content */}
                   <div className="p-6 sm:p-8">
                     <h3 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4 text-white group">
@@ -262,21 +261,21 @@ const Portfolio = () => {
                       </span>
                     </h3>
                     <p className="text-gray-300 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">{project.description}</p>
-                    
+
                     <div className="flex flex-wrap gap-2 mb-6 sm:mb-8">
                       {project.tech.map((tech, techIndex) => (
-                        <span 
-                          key={techIndex} 
+                        <span
+                          key={techIndex}
                           className="px-2 sm:px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-xs sm:text-sm hover:bg-blue-500/30 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/20"
                         >
                           {tech}
                         </span>
                       ))}
                     </div>
-                    
+
                     <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                      <a 
-                        href={project.liveLink} 
+                      <a
+                        href={project.liveLink}
                         className="flex-1 bg-gradient-to-r from-blue-500 to-purple-600 text-white py-2 sm:py-3 px-4 sm:px-6 rounded-lg text-center hover:from-blue-600 hover:to-purple-700 transition-all duration-300 flex items-center justify-center gap-2 font-medium shadow-lg shadow-blue-500/20 hover:shadow-blue-500/30 hover:scale-105 transform text-sm sm:text-base"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -284,8 +283,8 @@ const Portfolio = () => {
                         <ExternalLink className="w-4 h-4 transition-transform duration-300 group-hover:rotate-12" />
                         Live Demo
                       </a>
-                      <a 
-                        href={project.githubLink} 
+                      <a
+                        href={project.githubLink}
                         className="flex-1 border border-gray-600 text-gray-300 py-2 sm:py-3 px-4 sm:px-6 rounded-lg text-center hover:border-white hover:text-white transition-all duration-300 flex items-center justify-center gap-2 font-medium hover:bg-gray-800/50 hover:scale-105 transform text-sm sm:text-base"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -306,8 +305,8 @@ const Portfolio = () => {
             <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 animate-slideRight">Latest Blog Posts</h2>
             <div className="space-y-4 sm:space-y-6">
               {blogs.map((blog, index) => (
-                <div 
-                  key={index} 
+                <div
+                  key={index}
                   className="bg-gray-800 rounded-lg p-4 sm:p-6 border border-gray-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-500/20 animate-fadeIn"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
@@ -322,11 +321,11 @@ const Portfolio = () => {
                       <span className="hover:text-white transition-colors duration-300">{blog.date}</span>
                       <span className="hover:text-white transition-colors duration-300">{blog.readTime}</span>
                     </div>
-                    <a 
-                      href={blog.link} 
+                    <a
+                      href={blog.link}
                       className="text-blue-400 hover:text-blue-300 transition-all duration-300 flex items-center gap-2 group text-sm sm:text-base"
                     >
-                      Read more 
+                      Read more
                       <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
                     </a>
                   </div>

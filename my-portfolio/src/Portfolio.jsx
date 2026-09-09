@@ -25,7 +25,7 @@ const Portfolio = () => {
       title: "Personal Expense Tracker",
       description: "A full-stack expense tracker built with Typescript, React and Node.js. Features include user authentication, expense management, inventory management, and admin dashboard.",
       tech: ["Typescript", "React", "Node.js", "Postgresql", "Prisma", "Tailwind CSS"],
-      liveLink: "https://personal-expense-tracker-xi.vercel.app/",
+      liveLink: "https://100xpay.vercel.app/",
       githubLink: "https://github.com/Rohan5050/Personal-Expense-Tracker",
       image: img100xPay
     },
@@ -276,7 +276,7 @@ const Portfolio = () => {
                     <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                       <a
                         href={project.liveLink}
-                        className="flex-1 bg-gradient-to-r from-blue-500 to-purple-600 text-white py-2 sm:py-3 px-4 sm:px-6 rounded-lg text-center hover:from-blue-600 hover:to-purple-700 transition-all duration-300 flex items-center justify-center gap-2 font-medium shadow-lg shadow-blue-500/20 hover:shadow-blue-500/30 hover:scale-105 transform text-sm sm:text-base"
+                        className="flex-1 bg-gradient-to-r bg-emerald-500 text-white py-2 sm:py-3 px-4 sm:px-6 rounded-lg text-center hover:bg-emerald-400 transition-all duration-300 flex items-center justify-center gap-2 font-medium shadow-lg shadow-blue-500/20 hover:shadow-blue-500/30 hover:scale-105 transform text-sm sm:text-base"
                         target="_blank"
                         rel="noopener noreferrer"
                       >

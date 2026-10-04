@@ -147,7 +147,7 @@ const Portfolio = () => {
               { name: 'LinkedIn', icon: Linkedin, url: 'https://www.linkedin.com/in/rohanvohra055/' },
               { name: 'Twitter', icon: Twitter, url: 'https://x.com/rvohra18' },
               { name: 'Email', icon: Mail, url: 'mailto: rohanvohra055@gmail.com' },
-              { name: 'Resume', icon: FileText, url: 'https://drive.google.com/file/d/1oVWfyRZMyYlbqfiFgC7BPlVU5SBdVjjd/view?usp=sharing' }
+              { name: 'Resume', icon: FileText, url: 'https://drive.google.com/file/d/1UBNgiPv6ftjaSU3P_nOACHviJ8Qz8Ps6/view?usp=sharing' }
             ].map((link, index) => (
               <a
                 key={index}
